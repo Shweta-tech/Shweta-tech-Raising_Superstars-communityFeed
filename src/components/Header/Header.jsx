@@ -7,7 +7,7 @@ import { faSearch } from '@fortawesome/fontawesome-free-solid'
 import './Header.css';
 export default function Header() {
   return (
-    <div>
+    <div className="sticky top-0 z-50">
       
         <nav className="navbar w-full flex relative shadow justify-between items-center px-8 h-20">
             <div className="inline-flex navbar">
