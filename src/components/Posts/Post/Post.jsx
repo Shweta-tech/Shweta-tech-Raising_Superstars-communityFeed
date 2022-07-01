@@ -72,7 +72,7 @@ const Post = (post) => {
                     
                 </div>
                
-                <div className="relative flex items-center self-center w-full max-w-xl p-1 overflow-hidden text-gray-600 focus-within:text-gray-400">
+                <div className="relative flex items-center mx-3 self-center w-full max-w-xl p-1 overflow-hidden text-gray-600 focus-within:text-gray-400">
                     <img className="w-10 h-10 object-cover rounded-full shadow mr-2 cursor-pointer" alt="User avatar" src={user_img}/>
                     <span className="absolute inset-y-0 right-0 flex items-center pr-6">
                         <button type="submit" className="p-1 focus:outline-none focus:shadow-none hover:text-blue-500">
@@ -82,7 +82,7 @@ const Post = (post) => {
 
                         </button>
                     </span>
-                     <input type="search" className="w-full py-1 pl-4 pr-10 text-sm bg-gray-100 border border-transparent appearance-none rounded-tg placeholder-gray-400 focus:bg-white focus:outline-none focus:border-blue-500 focus:text-gray-900 focus:shadow-outline-blue"  placeholder="Post a comment..." autoComplete="off"/>
+                     <input type="search" className="w-3/4 py-1 pl-4 pr-10 text-sm bg-gray-100 border border-transparent appearance-none rounded-tg placeholder-gray-400 focus:bg-white focus:outline-none focus:border-blue-500 focus:text-gray-900 focus:shadow-outline-blue"  placeholder="Post a comment..." autoComplete="off"/>
                 </div>
             </div>
     );

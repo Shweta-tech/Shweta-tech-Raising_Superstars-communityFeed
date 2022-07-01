@@ -19,7 +19,6 @@ export default function App() {
     <div className="App">
       <Header/>
       <Posts data={data}></Posts>
-        {/* <pre>{data ?  : 'Loading...'}</pre>; */}
     </div>
   );
 }

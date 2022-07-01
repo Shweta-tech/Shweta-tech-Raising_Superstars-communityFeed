@@ -3,9 +3,9 @@
 Building a responsive web app that consumes Feed API using React, Tailwind CSS.
 
 Web Page
-<img src="laptop.png" alt="screenshot"/>
+<img src="laptop2.png" alt="screenshot"/>
 Mobile-screen
-<img src="mobile.png" alt="screenshot"/>
+<img src="mobile2.png" alt="screenshot"/>
 
 # Installation
 
