@@ -33,11 +33,11 @@ const Post = (post) => {
                     </div>
                 </div>
                 <div className="border-b border-gray-100"></div> 
-                <div className="text-gray-400 font-medium text-sm mb-7 mt-6 mx-3 px-2">
+                <div className="text-gray-400 font-medium text-sm mb-1 mt-3 mx-3 px-2">
 
                     <Image data={post.post.post.images} key={post.post._id}></Image>
                 </div>
-                <div className="text-gray-800 text-md mb-6 mx-3 px-2">{post.post.post.content}</div>
+                <div className="text-gray-800 text-md mb-2 mx-3 px-2">{post.post.post.content}</div>
                 <div className="flex w-full border-t border-gray-100">
                     <div className="mt-3 mx-5 flex flex-row text-xs">
                     <div className="flex text-gray-700  rounded-md mb-2 mr-4 items-center"><FontAwesomeIcon icon={faArrowUp}  size="lg"/> <div className="ml-1 text-gray-400 text-ms"> {post.post.post.counts.upvotes}</div></div>
@@ -51,7 +51,7 @@ const Post = (post) => {
 
                     </div>
                 </div>
-                <div className="flex justify-in-between mb-4 border-t border-gray-100">
+                <div className="flex justify-in-between mb-2 border-t border-gray-100">
                     <div className="flex w-full mt-1 pt-2 pl-5">
                        
                         <Comment className data={post.post.post.comments} key={post.post._id}></Comment>
@@ -72,7 +72,7 @@ const Post = (post) => {
                     
                 </div>
                
-                <div className="relative flex items-center self-center w-full max-w-xl p-4 overflow-hidden text-gray-600 focus-within:text-gray-400">
+                <div className="relative flex items-center self-center w-full max-w-xl p-1 overflow-hidden text-gray-600 focus-within:text-gray-400">
                     <img className="w-10 h-10 object-cover rounded-full shadow mr-2 cursor-pointer" alt="User avatar" src={user_img}/>
                     <span className="absolute inset-y-0 right-0 flex items-center pr-6">
                         <button type="submit" className="p-1 focus:outline-none focus:shadow-none hover:text-blue-500">
@@ -82,7 +82,7 @@ const Post = (post) => {
 
                         </button>
                     </span>
-                     <input type="search" className="w-full py-2 pl-4 pr-10 text-sm bg-gray-100 border border-transparent appearance-none rounded-tg placeholder-gray-400 focus:bg-white focus:outline-none focus:border-blue-500 focus:text-gray-900 focus:shadow-outline-blue"  placeholder="Post a comment..." autoComplete="off"/>
+                     <input type="search" className="w-full py-1 pl-4 pr-10 text-sm bg-gray-100 border border-transparent appearance-none rounded-tg placeholder-gray-400 focus:bg-white focus:outline-none focus:border-blue-500 focus:text-gray-900 focus:shadow-outline-blue"  placeholder="Post a comment..." autoComplete="off"/>
                 </div>
             </div>
     );
