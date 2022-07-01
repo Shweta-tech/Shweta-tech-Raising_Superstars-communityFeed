@@ -6,8 +6,7 @@ import Image from './Image/Image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye, faComment, faArrowUp, faShareSquare , faReply} from '@fortawesome/fontawesome-free-solid'
 const Post = (post) => {
-    // console.log(post.post.post.images)
-    console.log(post.post._id,"ye")
+    
     const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
     let created_at = new Date(post.post.post.createdAt);
