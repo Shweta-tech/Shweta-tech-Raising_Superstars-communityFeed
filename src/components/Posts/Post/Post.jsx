@@ -58,7 +58,7 @@ const Post = (post) => {
                        
                     </div>
 
-                    {post.post.post.comments.length >0 ?  <div className="flex justify-end w-full mt-1 pt-2 pr-5">
+                    {post.post.post.comments.length >0 ?  <div className="flex justify-end w-1/2 mt-1 pt-2 pr-5">
                         <span className="transition ease-out duration-300 hover:bg-blue-50 bg-blue-100 w-8 h-8 px-2 py-2 text-center rounded-full text-blue-400 cursor-pointer mr-2">
                             <FontAwesomeIcon icon={faReply} style={{verticalAlign:'-0.02rem'}}></FontAwesomeIcon>
                         </span>
