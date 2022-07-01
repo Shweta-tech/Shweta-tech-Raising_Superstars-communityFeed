@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import Posts from './components/Posts/Posts';
+import Header from "./components/Header/Header";
+
+import {useData} from './useData'
+
 import './App.css';
 
-function App() {
+
+export default function App() {
+
+  const data = useData();
+
+  if(!data){
+    return <div className="loading">loading....<i className="fas fa-cog fa-spin fa-10x"></i></div>
+
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <Posts data={data}></Posts>
+        {/* <pre>{data ?  : 'Loading...'}</pre>; */}
     </div>
   );
 }
-
-export default App;
