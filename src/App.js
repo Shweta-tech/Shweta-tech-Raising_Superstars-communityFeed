@@ -40,7 +40,7 @@ export default function App() {
   return (
     <div className="App">
       <Header/>
-      <div className='sticky top-20 z-50'>
+      <div className='md:w-1/2 w-full m-auto sticky top-20 z-50'>
 
       <button className={`bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded  ${asc && 'bg-blue-800 '}`}  onClick={handleClickAsc}>
         Ascending
