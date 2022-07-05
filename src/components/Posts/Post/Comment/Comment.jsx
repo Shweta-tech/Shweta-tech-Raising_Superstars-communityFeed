@@ -2,7 +2,6 @@ import React from "react";
 
 const Comment = (comment) => {
   
-    console.log(comment)
     return (
         <div>
          {/* Adding images available in post */}

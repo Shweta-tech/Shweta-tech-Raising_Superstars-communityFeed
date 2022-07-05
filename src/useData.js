@@ -1,9 +1,16 @@
 import {useState,useEffect} from 'react';
 
 
-export const useData = () =>{
+export const useData = (asc,des) =>{
     const [data,setData] = useState(null);
-    const uri = 'https://api.xcess.cloud/users/feed?limit=40&page=1'
+    let uri = 'https://api.xcess.cloud/users/feed?limit=10&page=1';
+    if(asc && !des){
+      uri = "https://api.xcess.cloud/users/feed?limit=10&page=1&sort=createdAt.asc";
+    }else if(!asc && des){
+      uri = "https://api.xcess.cloud/users/feed?limit=10&page=1&sort=createdAt.desc";
+    }else{
+      uri = 'https://api.xcess.cloud/users/feed?limit=10&page=1';
+    }
    
     useEffect(()=>{
         let head = new Headers();
@@ -24,6 +31,6 @@ export const useData = () =>{
         .catch( (err) =>{
             console.log('ERROR:', err.message);
         });
-      },[uri])
+      },[uri]);
       return data;
 }
